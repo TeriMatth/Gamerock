@@ -25,3 +25,23 @@ choiceBtns.forEach(button => button.addEventlistener("click", () => {
     resultText = checkWinner();
 
 }))
+
+//Create the computer choice function called computerTurn
+function computerTurn(){
+    //Craete a random number between 1 and 3.
+    const randNum = Math.floor(Math.random() * 3) +1;
+    switch(randNum){
+        case 1:
+            computerChoice = "ROCK";
+            break;
+        case 2:
+            computerChoice = "PAPER";
+            break;
+        case 3:
+            computerChoice = "SCISSORS";
+            break;
+
+
+    }
+
+}
