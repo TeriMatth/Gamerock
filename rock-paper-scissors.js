@@ -45,3 +45,20 @@ function computerTurn(){
     }
 
 }
+
+//The choosing the winner function
+
+function checkWinner(){
+    if (computerChoice == playerChoice){
+        return "It's a draw!"
+    }
+    else if(computerChoice == "ROCK"){
+        return(playerChoice == "PAPER") ?"You Lost!" : "You Won mann!";
+    }
+    else if(computerChoice == "PAPER"){
+        return(playerChoice == "SCISSORS") ?"You Lost mann" : "You won";
+    }
+    else if(computerChoice == "SCISSORS"){
+        return(playerChoice == "ROCK") ?"You lost !!" : "You won !!"
+    }
+}
